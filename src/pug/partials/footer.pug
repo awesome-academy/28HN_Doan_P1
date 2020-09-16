@@ -1,0 +1,84 @@
+mixin linkSocial(classIcon)
+     a(href="#")
+         i(class=classIcon)
+mixin link(name)
+     a(href="#")!= "&rsaquo;" + name
+footer
+     section.foot-1
+         .container
+             .row
+                 .col-lg-4.col-md-8.col-sm-12
+                     .foot-1__item
+                         h4 Kênh thông tin từ chúng tôi:
+                         +linkSocial("fab fa-facebook-f")
+                         +linkSocial("fab fa-twitter")
+                         +linkSocial("fab fa-tumblr")
+                         +linkSocial("fab fa-vimeo-v")         
+                 .col-lg-2.col-md-4.col-sm-12
+                     .foot-1__item
+                         h4 Đăng kí nhận Email từ chúng tôi
+                 .col-lg-6.col-md-12.col-sm-12
+                     .foot-1__item
+                         .input-group
+                             input(type="text" class="form-control" name="Email" )
+                             .input-group-append
+                                 button.btn
+                                     i(class="fas fa-paper-plane")
+     hr
+     section.foot-2
+         .container
+             .row
+                 .col-lg-4.col-md-12
+                     .foot-2__item.foot-2__item--about
+                         img(src="assets/images/logo.png", alt="logo")
+                         p Greenshop được thành lập từ  8/2010 được sự tin tưởng của khách hàng từ trước đến nay cửa hàng ngày 1 phát triển.
+                         p
+                             !='<i class="fas fa-mobile-alt"></i>'+'  Điện thoại: (84-4) 66.558.868'
+                         p
+                             !='<i class="far fa-envelope"></i>'+'  Email: info@dkt.com.vn'
+                 .col-lg-2.col-md-6.col-sm-12
+                     .foot-2__item.foot-2__item--link
+                         h4 Thông tin khách hàng
+                         -var list1=["Tài khoản của tôi","Sản phẩm yêu thích","Lịch sử mua hàng","Chính sách đổi trả","Góp ý, khiếu nại"]
+                         each item in list1
+                             +link(item)
+                             br
+                 .col-lg-2.col-md-6.col-sm-12
+                     .foot-2__item.foot-2__item--link
+                         h4 Hỗ trợ dịch vụ
+                         -var list1=["Hệ thống cửa hàng","Hướng dẫn mua hàng","Hướng dẫn thanh toán","Tích điểm đổi quà","Câu hỏi thường gặp"]
+                         each item in list1
+                             +link(item)
+                             br
+                 .col-lg-2.col-md-6.col-sm-12
+                     .foot-2__item.foot-2__item--link
+                         h4 Chính sách ưu đãi
+                         -var list1=["Chính sách giao hàng","Chính sách đổi trả sản phẩm","Chính sách bảo hàng","Giới thiệu sản phẩm mới","Chính sách trả góp"]
+                         each item in list1
+                             +link(item)
+                             br
+                 .col-lg-2.col-md-6.col-sm-12
+                     .foot-2__item.foot-2__item--link
+                         h4 Tin tức
+                         -var list1=["Tin mới","Khuyến mại","Tuyển dụng","Download","Tags"]
+                         each item in list1
+                             +link(item)
+                             br                                    
+     hr
+     section.foot-3
+         .container
+             .row.justify-content-between
+                 .col-auto
+                     .foot-3__item.foot-3__item--links
+                         -var list2=["Sitemap","Danh mục sản phẩm","Hợp tác","Thông tin liên hệ","Câu hỏi thường gặp"]
+                         each item in list2
+                             a(href="#")= item
+                 .col-auto            
+                     .foot-3__item.foot-3__item--pay
+                         -var list2=['<i class="fab fa-cc-visa"></i>','<i class="fab fa-cc-mastercard"></i>','<i class="fab fa-cc-paypal"></i>','<i class="fab fa-cc-discover"></i>']
+                         each item in list2
+                             a(href="#")!= item     
+     section.foot-4
+         h5
+             !='Thiết kế bởi Bizweb'+'&copy'
+             
