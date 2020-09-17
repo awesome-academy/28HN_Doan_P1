@@ -3,6 +3,10 @@ mixin linkSocial(classIcon)
          i(class=classIcon)
 mixin link(name)
      a(href="#")!= "&rsaquo;" + name
+mixin listLink(list)
+     each item in list
+         +link(item)
+         br
 footer
      section.foot-1
          .container
@@ -39,44 +43,30 @@ footer
                  .col-lg-2.col-md-6.col-sm-12
                      .foot-2__item.foot-2__item--link
                          h4 Thông tin khách hàng
-                         -var list1=["Tài khoản của tôi","Sản phẩm yêu thích","Lịch sử mua hàng","Chính sách đổi trả","Góp ý, khiếu nại"]
-                         each item in list1
-                             +link(item)
-                             br
+                         +listLink(list1)
                  .col-lg-2.col-md-6.col-sm-12
                      .foot-2__item.foot-2__item--link
                          h4 Hỗ trợ dịch vụ
-                         -var list1=["Hệ thống cửa hàng","Hướng dẫn mua hàng","Hướng dẫn thanh toán","Tích điểm đổi quà","Câu hỏi thường gặp"]
-                         each item in list1
-                             +link(item)
-                             br
+                         +listLink(list2)
                  .col-lg-2.col-md-6.col-sm-12
                      .foot-2__item.foot-2__item--link
                          h4 Chính sách ưu đãi
-                         -var list1=["Chính sách giao hàng","Chính sách đổi trả sản phẩm","Chính sách bảo hàng","Giới thiệu sản phẩm mới","Chính sách trả góp"]
-                         each item in list1
-                             +link(item)
-                             br
+                         +listLink(list3)
                  .col-lg-2.col-md-6.col-sm-12
                      .foot-2__item.foot-2__item--link
                          h4 Tin tức
-                         -var list1=["Tin mới","Khuyến mại","Tuyển dụng","Download","Tags"]
-                         each item in list1
-                             +link(item)
-                             br                                    
+                         +listLink(list4)                               
      hr
      section.foot-3
          .container
              .row.justify-content-between
                  .col-auto
                      .foot-3__item.foot-3__item--links
-                         -var list2=["Sitemap","Danh mục sản phẩm","Hợp tác","Thông tin liên hệ","Câu hỏi thường gặp"]
-                         each item in list2
+                         each item in list5
                              a(href="#")= item
                  .col-auto            
                      .foot-3__item.foot-3__item--pay
-                         -var list2=['<i class="fab fa-cc-visa"></i>','<i class="fab fa-cc-mastercard"></i>','<i class="fab fa-cc-paypal"></i>','<i class="fab fa-cc-discover"></i>']
-                         each item in list2
+                         each item in list6
                              a(href="#")!= item     
      section.foot-4
          h5
