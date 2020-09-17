@@ -10,10 +10,8 @@ header
                      span
                       != '<i class="far fa-clock"></i>' + ' Open time : 8:00 - 18:00 Monday - Sunday'
                      ul.top-bar__social--list
-                         +social("fab fa-facebook-f")   
-                         +social("fab fa-twitter") 
-                         +social("fab fa-tumblr") 
-                         +social("fab fa-vimeo-v")
+                         each item in social
+                             +social(item)
                  .col-auto
                      .top-bar__links
                          a(href="#")
@@ -67,13 +65,4 @@ header
                          li.nav-item
                              a.nav-link(href="#") Tin tức 
                          li.nav-item
-                             a.nav-link(href="#") Liên hệ           
-                                 
-
-                    
-                     
-
-            
-          
-             
-             
+                             a.nav-link(href="#") Liên hệ     

@@ -14,10 +14,8 @@ footer
                  .col-lg-4.col-md-8.col-sm-12
                      .foot-1__item
                          h4 Kênh thông tin từ chúng tôi:
-                         +linkSocial("fab fa-facebook-f")
-                         +linkSocial("fab fa-twitter")
-                         +linkSocial("fab fa-tumblr")
-                         +linkSocial("fab fa-vimeo-v")         
+                         each item in social
+                             +linkSocial(item)       
                  .col-lg-2.col-md-4.col-sm-12
                      .foot-1__item
                          h4 Đăng kí nhận Email từ chúng tôi
