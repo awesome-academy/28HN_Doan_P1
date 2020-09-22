@@ -1,0 +1,19 @@
+mixin product(image,name,priceNew,priceOld,tag,tagColor,tagContent)
+      .products__item
+         .item__img
+             .item__tag(style=tag+tagColor)
+                 span=tagContent
+             .overlay
+             .btn-group
+                 button.btn-success.btn
+                     a(href="#") Mua ngay
+                 button.btn.btn-light
+                     a(href="#")
+                         !='<i class="fas fa-search"></i>'
+             img.d-block.w-100(src=image,alt="sp")
+         h5.item__name= name
+         span.item__star
+             != star
+         p.item__price
+             span=priceNew
+             span="  "+priceOld
