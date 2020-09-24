@@ -61,3 +61,63 @@
         }
     }
 }
+.detail-blog{
+    margin-top: 5rem;
+    &__title{
+        font-size: 3rem;
+    }
+    &__info{
+        color: gray;
+        font-size: 1.2rem;
+        i{
+            color: rgb( 63, 184, 113 ) ;
+            margin-left: 1rem;
+        }
+    }
+    &__content{
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+}
+.comment{
+    h3{
+        margin: 5rem 0;
+    }
+    &__item{
+        margin: 5rem 0;
+        img{
+            float: left;
+            width: 7rem;
+            border-radius: 100%;
+        }
+        button{
+            float: right;
+        }
+        &--username{
+            font-weight: bolder;
+            font-style: italic;
+        }
+        &--content{
+            margin:0 5rem;
+        }
+    }
+    &--form{
+        input,textarea{
+            width: 100%;
+            padding: 1rem 0.5rem;
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        button{
+            padding: 1rem 4rem;
+            text-transform: uppercase;
+            border-radius: 5rem;
+            float: right;
+            outline: none;
+            border: none;
+            background-color: rgb( 63, 184, 113 );
+            color: white;
+            margin-bottom: 5rem;
+        }
+    }
+}

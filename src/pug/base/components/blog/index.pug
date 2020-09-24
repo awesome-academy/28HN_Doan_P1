@@ -1,10 +1,11 @@
 mixin blog-item(title,image,text)
-     .blogs__item
-         h4.item__title=title
-         span.item__info
-             !='<i class="far fa-calendar-minus"></i>'+'  20/12/2015' + '<i class="far fa-clock"></i>'+ '  11:20:00 AM'+ '<i class="far fa-comment-dots"></i>' + '  0 bình luận'
-         img.d-block.w-100(src=image, alt="image")
-         p.item__text=text
+     a(href="detailBlog.html")
+         .blogs__item
+             h4.item__title=title
+             span.item__info
+                 !='<i class="far fa-calendar-minus"></i>'+'  20/12/2015' + '<i class="far fa-clock"></i>'+ '  11:20:00 AM'+ '<i class="far fa-comment-dots"></i>' + '  0 bình luận'
+             img.d-block.w-100(src=image, alt="image")
+             p.item__text=text
 .container
      .row
          .col-lg-3.col-sm-12
