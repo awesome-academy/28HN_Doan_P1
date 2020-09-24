@@ -31,4 +31,11 @@ mixin pagination
              li.page-item
                  a.page-link(href="#") 4
              li.page-item
-                 a.page-link(href="#") Trang cuối           
+                 a.page-link(href="#") Trang cuối        
+mixin hot-blog-item(image,text)
+     .hot-blogs__item
+         img(src=image, alt="img")
+         p= text
+mixin blog-tag-item(tag)
+     .col-auto
+         .blog-tags__item= tag     
