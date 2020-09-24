@@ -54,7 +54,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link active" href="#">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index.html">Trang chủ</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
                 <li class="nav-item dropdown"><a class="nav-link" href="#">Sản phẩm<span class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span></a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#"></a><a class="dropdown-item" href="#"></a><a class="dropdown-item" href="#"></a></div>
@@ -62,7 +62,7 @@
                 <li class="nav-item dropdown"><a class="nav-link" href="#">Sản phẩm mới<span class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span></a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#"></a><a class="dropdown-item" href="#"></a><a class="dropdown-item" href="#"></a></div>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#">Tin tức </a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Tin tức </a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Liên hệ     </a></li>
               </ul>
             </div>
@@ -70,6 +70,436 @@
         </div>
       </section>
     </header>
+    <section class="slider">
+      <div class="container-fluid pr-0 pl-0">
+        <div class="carousel slide carousel-fade" id="slider" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#slider" data-slide-to="0"></li>
+            <li data-target="#slider" data-slide-to="1"></li>
+            <li data-target="#slider" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="slider__item">
+                <button class="btn btn-success">Xem chi tiết</button><img class="d-block w-100" src="assets/images/slide-1920x590.png" alt="First slide"/>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slider__item">
+                <button class="btn btn-success">Xem chi tiết</button><img class="d-block w-100" src="assets/images/slide-1920x590-1.png" alt="Second slide"/>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slider__item">
+                <button class="btn btn-success">Xem chi tiết    </button><img class="d-block w-100" src="assets/images/slide-1920x590-2.png" alt="Third slide"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hot-products">
+      <div class="container">
+        <h5 class="hot-products--title">Sản phẩm nổi bật</h5>
+        <div class="line">
+          <div class="line__child"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <div class="row">
+              <div class="col-12">
+                    <div class="products__item">
+                      <div class="item__img">
+                        <div class="item__tag" style="display:block;background-color: rgb( 63, 184, 113 );"><span>new</span></div>
+                        <div class="overlay"></div>
+                        <div class="btn-group">
+                          <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                          <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                        </div><img class="d-block w-100" src="assets/images/sp/sp1.png" alt="sp"/>
+                      </div>
+                      <h5 class="item__name">Cây chân chim</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price"><span>250.000 đ</span><span>  250.000 đ</span></p>
+                    </div>
+              </div>
+              <div class="col-6">
+                    <div class="products__item">
+                      <div class="item__img">
+                        <div class="item__tag"><span></span></div>
+                        <div class="overlay"></div>
+                        <div class="btn-group">
+                          <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                          <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                        </div><img class="d-block w-100" src="assets/images/sp/sp2.png" alt="sp"/>
+                      </div>
+                      <h5 class="item__name">Cây cọ ta</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price"><span>150.000 đ</span><span>  250.000 đ</span></p>
+                    </div>
+              </div>
+              <div class="col-6">
+                    <div class="products__item">
+                      <div class="item__img">
+                        <div class="item__tag"><span></span></div>
+                        <div class="overlay"></div>
+                        <div class="btn-group">
+                          <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                          <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                        </div><img class="d-block w-100" src="assets/images/sp/sp3.png" alt="sp"/>
+                      </div>
+                      <h5 class="item__name">Cây dứa nhỏ</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price"><span>375.000 đ</span><span>  250.000 đ</span></p>
+                    </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">    
+            <div class="row">
+              <div class="col-6">
+                    <div class="products__item">
+                      <div class="item__img">
+                        <div class="item__tag" style="display:block;background-color: rgb( 237, 28, 36 );"><span>-50%</span></div>
+                        <div class="overlay"></div>
+                        <div class="btn-group">
+                          <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                          <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                        </div><img class="d-block w-100" src="assets/images/sp/sp4.png" alt="sp"/>
+                      </div>
+                      <h5 class="item__name">Cây Dạ Lam</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price"><span>500.000 đ</span><span>  250.000 đ</span></p>
+                    </div>
+              </div>
+              <div class="col-6">
+                    <div class="products__item">
+                      <div class="item__img">
+                        <div class="item__tag" style="display:block;background-color: rgb( 63, 184, 113 );"><span>new</span></div>
+                        <div class="overlay"></div>
+                        <div class="btn-group">
+                          <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                          <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                        </div><img class="d-block w-100" src="assets/images/sp/sp5.png" alt="sp"/>
+                      </div>
+                      <h5 class="item__name">Cây Danh Dự</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price"><span>850.000 đ</span><span>  250.000 đ</span></p>
+                    </div>
+              </div>
+              <div class="col-12">
+                    <div class="products__item">
+                      <div class="item__img">
+                        <div class="item__tag" style="display:block;background-color: rgb( 237, 28, 36 );"><span>-50%</span></div>
+                        <div class="overlay"></div>
+                        <div class="btn-group">
+                          <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                          <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                        </div><img class="d-block w-100" src="assets/images/sp/sp6.png" alt="sp"/>
+                      </div>
+                      <h5 class="item__name">Cây đa búp đỏ</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price"><span>1.000.000 đ</span><span>  250.000 đ</span></p>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12">
+          <section class="most-products">
+            <h5 class="most-products--title">Sản phẩm mua nhiều</h5>
+            <div class="line">
+              <div class="line__child"></div>
+            </div>
+            <div class="row">
+                  <div class="col-lg-12 col-md-4 col-sm-12">
+                    <div class="most-products__item"><img src="assets/images/sp/sp1.png" alt="image"/>
+                      <p class="item__name">Cây chân chim</p><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price">250.000 đ</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-4 col-sm-12">
+                    <div class="most-products__item"><img src="assets/images/sp/sp3.png" alt="image"/>
+                      <p class="item__name">Cây Dạ Lam</p><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price">150.000 đ</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-4 col-sm-12">
+                    <div class="most-products__item"><img src="assets/images/sp/sp5.png" alt="image"/>
+                      <p class="item__name">Cây Danh Dự</p><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price">450.000 đ</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-4 col-sm-12">
+                    <div class="most-products__item"><img src="assets/images/sp/sp4.png" alt="image"/>
+                      <p class="item__name">Cây đa búp đủ</p><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price">200.000 đ</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-4 col-sm-12">
+                    <div class="most-products__item"><img src="assets/images/sp/sp2.png" alt="image"/>
+                      <p class="item__name">Cây cọ ta</p><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price">300.000 đ</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-4 col-sm-12">
+                    <div class="most-products__item"><img src="assets/images/sp/sp6.png" alt="image"/>
+                      <p class="item__name">Cây dứa nhỏ</p><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price">275.000 đ</p>
+                    </div>
+                  </div>
+            </div>
+          </section>
+        </div>
+        <div class="col-lg-9 col-md-12">
+          <section class="sale-products">
+            <h5 class="sale-products--title">Sản phẩm  khuyến mại</h5>
+            <div class="line">
+              <div class="line__child"></div>
+            </div>
+            <div class="row">
+                  <div class="col-lg-4 col-sm-6">
+                        <div class="products__item">
+                          <div class="item__img">
+                            <div class="item__tag" style="display:block;background-color: rgb( 237, 28, 36 );"><span>-50%</span></div>
+                            <div class="overlay"></div>
+                            <div class="btn-group">
+                              <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                              <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                            </div><img class="d-block w-100" src="assets/images/sp/sp4.png" alt="sp"/>
+                          </div>
+                          <h5 class="item__name">Cây Dạ Lam</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                          <p class="item__price"><span>500.000 đ</span><span>  250.000 đ</span></p>
+                        </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                        <div class="products__item">
+                          <div class="item__img">
+                            <div class="item__tag" style="display:block;background-color: rgb( 237, 28, 36 );"><span>-10%</span></div>
+                            <div class="overlay"></div>
+                            <div class="btn-group">
+                              <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                              <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                            </div><img class="d-block w-100" src="assets/images/sp/sp2.png" alt="sp"/>
+                          </div>
+                          <h5 class="item__name">Cây dứa nhỏ</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                          <p class="item__price"><span>668.000 đ</span><span>  250.000 đ</span></p>
+                        </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                        <div class="products__item">
+                          <div class="item__img">
+                            <div class="item__tag" style="display:block;background-color: rgb( 237, 28, 36 );"><span>-20%</span></div>
+                            <div class="overlay"></div>
+                            <div class="btn-group">
+                              <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                              <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                            </div><img class="d-block w-100" src="assets/images/sp/sp3.png" alt="sp"/>
+                          </div>
+                          <h5 class="item__name">Cây cọ ta</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                          <p class="item__price"><span>770.000 đ</span><span>  250.000 đ</span></p>
+                        </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                        <div class="products__item">
+                          <div class="item__img">
+                            <div class="item__tag" style="display:block;background-color: rgb( 237, 28, 36 );"><span>-25%</span></div>
+                            <div class="overlay"></div>
+                            <div class="btn-group">
+                              <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                              <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                            </div><img class="d-block w-100" src="assets/images/sp/sp6.png" alt="sp"/>
+                          </div>
+                          <h5 class="item__name">Cây Danh Dự</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                          <p class="item__price"><span>445.000 đ</span><span>  250.000 đ</span></p>
+                        </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                        <div class="products__item">
+                          <div class="item__img">
+                            <div class="item__tag" style="display:block;background-color: rgb( 237, 28, 36 );"><span>-15%</span></div>
+                            <div class="overlay"></div>
+                            <div class="btn-group">
+                              <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                              <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                            </div><img class="d-block w-100" src="assets/images/sp/sp5.png" alt="sp"/>
+                          </div>
+                          <h5 class="item__name">Cây chân chim</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                          <p class="item__price"><span>500.000 đ</span><span>  250.000 đ</span></p>
+                        </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                        <div class="products__item">
+                          <div class="item__img">
+                            <div class="item__tag" style="display:block;background-color: rgb( 237, 28, 36 );"><span>-50%</span></div>
+                            <div class="overlay"></div>
+                            <div class="btn-group">
+                              <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                              <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                            </div><img class="d-block w-100" src="assets/images/sp/sp4.png" alt="sp"/>
+                          </div>
+                          <h5 class="item__name">Cây Dạ Lam</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                          <p class="item__price"><span>500.000 đ</span><span>  250.000 đ</span></p>
+                        </div>
+                  </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <section class="mid-banner"><img class="d-block w-100" src="assets/images/banner.png" alt="banner"/></section>
+    </div>
+    <section class="new-products">
+      <div class="container">
+        <h5 class="new-products--title">Sản phẩm mới</h5>
+        <div class="line">
+          <div class="line__child"></div>
+        </div>
+        <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                    <div class="products__item">
+                      <div class="item__img">
+                        <div class="item__tag" style="display:block;background-color: rgb( 63, 184, 113 );"><span>new</span></div>
+                        <div class="overlay"></div>
+                        <div class="btn-group">
+                          <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                          <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                        </div><img class="d-block w-100" src="assets/images/sp/sp1.png" alt="sp"/>
+                      </div>
+                      <h5 class="item__name">Cây chân chim</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price"><span>200.000 đ</span><span>  250.000 đ</span></p>
+                    </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                    <div class="products__item">
+                      <div class="item__img">
+                        <div class="item__tag" style="display:block;background-color: rgb( 63, 184, 113 );"><span>new</span></div>
+                        <div class="overlay"></div>
+                        <div class="btn-group">
+                          <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                          <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                        </div><img class="d-block w-100" src="assets/images/sp/sp2.png" alt="sp"/>
+                      </div>
+                      <h5 class="item__name">Cây Dạ Lam</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price"><span>100.000 đ</span><span>  250.000 đ</span></p>
+                    </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                    <div class="products__item">
+                      <div class="item__img">
+                        <div class="item__tag" style="display:block;background-color: rgb( 63, 184, 113 );"><span>new</span></div>
+                        <div class="overlay"></div>
+                        <div class="btn-group">
+                          <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                          <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                        </div><img class="d-block w-100" src="assets/images/sp/sp3.png" alt="sp"/>
+                      </div>
+                      <h5 class="item__name">Cây Danh Dự</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price"><span>150.000 đ</span><span>  250.000 đ</span></p>
+                    </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                    <div class="products__item">
+                      <div class="item__img">
+                        <div class="item__tag" style="display:block;background-color: rgb( 63, 184, 113 );"><span>new</span></div>
+                        <div class="overlay"></div>
+                        <div class="btn-group">
+                          <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                          <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                        </div><img class="d-block w-100" src="assets/images/sp/sp4.png" alt="sp"/>
+                      </div>
+                      <h5 class="item__name">Cây dứa nhỏ</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price"><span>300.000 đ</span><span>  250.000 đ</span></p>
+                    </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                    <div class="products__item">
+                      <div class="item__img">
+                        <div class="item__tag" style="display:block;background-color: rgb( 63, 184, 113 );"><span>new</span></div>
+                        <div class="overlay"></div>
+                        <div class="btn-group">
+                          <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                          <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                        </div><img class="d-block w-100" src="assets/images/sp/sp5.png" alt="sp"/>
+                      </div>
+                      <h5 class="item__name">Cây cọ ta</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price"><span>400.000 đ</span><span>  250.000 đ</span></p>
+                    </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                    <div class="products__item">
+                      <div class="item__img">
+                        <div class="item__tag" style="display:block;background-color: rgb( 63, 184, 113 );"><span>new</span></div>
+                        <div class="overlay"></div>
+                        <div class="btn-group">
+                          <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                          <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                        </div><img class="d-block w-100" src="assets/images/sp/sp6.png" alt="sp"/>
+                      </div>
+                      <h5 class="item__name">Cây xương rồng</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price"><span>180.000 đ</span><span>  250.000 đ</span></p>
+                    </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                    <div class="products__item">
+                      <div class="item__img">
+                        <div class="item__tag" style="display:block;background-color: rgb( 63, 184, 113 );"><span>new</span></div>
+                        <div class="overlay"></div>
+                        <div class="btn-group">
+                          <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                          <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                        </div><img class="d-block w-100" src="assets/images/sp/sp7.png" alt="sp"/>
+                      </div>
+                      <h5 class="item__name">Cây chân chim</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price"><span>345.000 đ</span><span>  250.000 đ</span></p>
+                    </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                    <div class="products__item">
+                      <div class="item__img">
+                        <div class="item__tag" style="display:block;background-color: rgb( 63, 184, 113 );"><span>new</span></div>
+                        <div class="overlay"></div>
+                        <div class="btn-group">
+                          <button class="btn-success btn"><a href="#">Mua ngay</a></button>
+                          <button class="btn btn-light"><a href="#"><i class="fas fa-search"></i></a></button>
+                        </div><img class="d-block w-100" src="assets/images/sp/sp8.png" alt="sp"/>
+                      </div>
+                      <h5 class="item__name">Cây đa búp đỏ</h5><span class="item__star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                      <p class="item__price"><span>1.000.000 đ</span><span>  250.000 đ</span></p>
+                    </div>
+              </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="container">
+        <div class="h5 blog--title">Tin tức</div>
+        <div class="line">
+          <div class="line__child"></div>
+        </div>
+        <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="blog__item"><img class="d-block w-100" src="assets/images/blogs/blog1.png" alt="image"/>
+                  <p class="blog__item--date">Thứ 7 , ngày 31, tháng 12, năm 2015</p>
+                  <p class="blog__item--title">Cách bố trí chậu hoa trước cửa gây ấn tượng đầu tiên</p>
+                  <p class="blog__item--content">Cùng Sài Gòn Hoa tìm hiểu một vài xu hướng thiết kế sân vườn đưowjc ưa chuộng nhất hiện nay nhé. Kết hợp hàng rào...</p><a href="detailBlog.html">Đọc tiếp</a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="blog__item"><img class="d-block w-100" src="assets/images/blogs/blog2.png" alt="image"/>
+                  <p class="blog__item--date">Thứ 7 , ngày 31, tháng 12, năm 2015</p>
+                  <p class="blog__item--title">Hướng dẫn lựa chọn và bố trí cây xanh trong phòng khách</p>
+                  <p class="blog__item--content">Khi bước từ ngoài ngõ vào hay trong nhà đi ra góc sân luôn là điểm nhìn đầu tiên của chúng ta...</p><a href="detailBlog.html">Đọc tiếp</a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="blog__item"><img class="d-block w-100" src="assets/images/blogs/blog3.png" alt="image"/>
+                  <p class="blog__item--date">Thứ 7 , ngày 31, tháng 12, năm 2015</p>
+                  <p class="blog__item--title">7 loại cây xanh để bàn đang được giới văn phòng ưa chuộng</p>
+                  <p class="blog__item--content">Như thể sự thân thiện, hiếu khách của gia chủ. Phần không gian trước cửa...</p><a href="detailBlog.html">Đọc tiếp</a>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <section class="foot-1">
         <div class="container">
