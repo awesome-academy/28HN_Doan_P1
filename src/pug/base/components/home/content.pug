@@ -1,11 +1,12 @@
 mixin most-product__item(image,name,price)
      .col-lg-12.col-md-4.col-sm-12
-         .most-products__item
-             img(src=image, alt="image")
-             p.item__name= name
-             span.item__star
-                 != star
-             p.item__price= price
+         a(href="detailProduct.html")    
+             .most-products__item
+                 img(src=image, alt="image")
+                 p.item__name= name
+                 span.item__star
+                     != star
+                 p.item__price= price
 mixin sale-product__item(image,name,priceNew,priceOld,tag,tagColor,tagContent)
      .col-lg-4.col-sm-6
          +product(image,name,priceNew,priceOld,tag,tagColor,tagContent)
